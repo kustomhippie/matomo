@@ -1,0 +1,16 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - server/
+
+commonLabels:
+  app.kubernetes.io/name: matomo
+
+images:
+  - name: matomo-server
+    newName: docker.io/library/matomo
+    newTag: "4.3.1"
+
+...

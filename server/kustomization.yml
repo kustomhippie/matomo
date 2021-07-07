@@ -1,0 +1,18 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - serviceaccount.yml
+  - service.yml
+  - pvc.yml
+  - deployment.yml
+
+commonLabels:
+  app.kubernetes.io/component: server
+
+configMapGenerator:
+  - name: matomo-server
+    literals: []
+
+...

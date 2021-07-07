@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: matomo-server
+
+spec:
+  replicas: 1
+
+  template:
+    spec:
+      serviceAccountName: matomo-server
+
+      containers:
+        - name: server
+          image: matomo-server
+          imagePullPolicy: IfNotPresent
+
+          envFrom:
+            - configMapRef:
+                name: matomo-server
+
+          # resources:
+          #   requests:
+          #     cpu: "0.1"
+          #     memory: "64Mi"
+          #   limits:
+          #     cpu: "0.5"
+          #     memory: "512Mi"
+
+          volumeMounts:
+            - name: data
+              mountPath: /var/www/html
+
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: matomo
+...

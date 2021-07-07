@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: matomo-server
+
+spec:
+  ports:
+    - name: http
+      port: 80
+
+...
