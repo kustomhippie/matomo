@@ -10,7 +10,7 @@ commonLabels:
 
 images:
   - name: matomo-server
-    newName: docker.io/library/matomo
+    newName: library/matomo
     newTag: "4.3.1"
 
 ...
