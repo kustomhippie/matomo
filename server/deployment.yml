@@ -12,6 +12,34 @@ spec:
     spec:
       serviceAccountName: matomo-server
 
+      initContainers:
+        - name: checks
+          image: matomo-checks
+          imagePullPolicy: IfNotPresent
+
+          securityContext:
+            allowPrivilegeEscalation: false
+
+          command:
+            - sh
+            - -c
+            - |
+              echo "Waiting for database to become ready..."
+              wait-for-it -t 120 ${MATOMO_DATABASE_HOST}
+              echo "OK ✓"
+
+          envFrom:
+            - configMapRef:
+                name: matomo-server
+
+          resources:
+            limits:
+              cpu: 10m
+              memory: 16Mi
+            requests:
+              cpu: 10m
+              memory: 16Mi
+
       containers:
         - name: server
           image: matomo-server
