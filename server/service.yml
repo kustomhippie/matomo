@@ -4,8 +4,15 @@ kind: Service
 
 metadata:
   name: matomo-server
+  labels:
+    app.kubernetes.io/name: matomo
+    app.kubernetes.io/component: server
 
 spec:
+  selector:
+    app.kubernetes.io/name: matomo
+    app.kubernetes.io/component: server
+
   ports:
     - name: http
       port: 80

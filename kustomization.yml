@@ -5,14 +5,10 @@ kind: Kustomization
 resources:
   - server/
 
-commonLabels:
-  app.kubernetes.io/name: matomo
-
 images:
   - name: matomo-checks
     newName: quay.io/webhippie/alpine
     newTag: "3.14"
-
   - name: matomo-server
     newName: library/matomo
     newTag: "4.3.1"
