@@ -68,6 +68,10 @@ spec:
             - secretRef:
                 name: matomo-server
 
+          ports:
+            - name: http
+              containerPort: 80
+
           volumeMounts:
             - name: data
               mountPath: /var/www/html
@@ -75,5 +79,5 @@ spec:
       volumes:
         - name: data
           persistentVolumeClaim:
-            claimName: matomo
+            claimName: matomo-server
 ...
