@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/kustomhippie/matomo/compare/v1.0.0...v2.0.0) (2023-07-17)
+
+
+### Features
+
+* **major:** update actionhippie/kustomize action to v2 ([9930967](https://github.com/kustomhippie/matomo/commit/9930967bfec2176deda4aa1133107b2d07fa1edc))
+* **minor:** update library/matomo docker tag to v4.15.0 ([0e37315](https://github.com/kustomhippie/matomo/commit/0e37315d47de3ea0c52ef0ac111f1f55d2005dbf))
+
 ## 1.0.0 (2023-06-05)
 
 
