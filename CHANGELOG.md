@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/kustomhippie/matomo/compare/v2.0.1...v2.1.0) (2023-12-04)
+
+
+### Features
+
+* **deps:** update library/matomo docker tag to v4.16.0 ([1ae7c74](https://github.com/kustomhippie/matomo/commit/1ae7c741728c6dba69a60db90b06b3265f577972))
+
 ## [2.0.1](https://github.com/kustomhippie/matomo/compare/v2.0.0...v2.0.1) (2023-08-07)
 
 
