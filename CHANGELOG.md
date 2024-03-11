@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/kustomhippie/matomo/compare/v3.0.2...v3.0.3) (2024-03-11)
+
+
+### Bugfixes
+
+* **deps:** update library/matomo docker tag to v5.0.3 ([85f0e80](https://github.com/kustomhippie/matomo/commit/85f0e80bcb27895490ebd2dd06d3bed49c7a5469))
+
 ## [3.0.2](https://github.com/kustomhippie/matomo/compare/v3.0.1...v3.0.2) (2024-02-12)
 
 
