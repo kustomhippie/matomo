@@ -11,6 +11,6 @@ images:
     newTag: "3.20"
   - name: matomo-server
     newName: library/matomo
-    newTag: "5.2.1"
+    newTag: "5.2.2"
 
 ...
