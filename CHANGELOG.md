@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.4.0](https://github.com/kustomhippie/matomo/compare/v3.3.2...v3.4.0) (2025-02-17)
+
+
+### Features
+
+* **deps:** update quay.io/webhippie/alpine docker tag to v3.21 ([#40](https://github.com/kustomhippie/matomo/issues/40)) ([06c617c](https://github.com/kustomhippie/matomo/commit/06c617ca3134c7f0f1948f7d56e28efacde5e266))
+
 ## [3.3.2](https://github.com/kustomhippie/matomo/compare/v3.3.1...v3.3.2) (2025-01-27)
 
 
